@@ -1,0 +1,134 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.safely.MapsActivity" >
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:id="@+id/map"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="30dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                app:cardCornerRadius="12dp"
+                app:contentPadding="16dp"
+                android:backgroundTint="#efefef"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Home"
+                        android:textSize="20sp"
+                        android:textColor="#000000"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="VIT University, Vellore"
+                        android:id="@+id/homeAddress"
+                        android:textColor="#000000"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Estimated Value:"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="17sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$ 130,000"
+                            android:id="@+id/estimatedValue"
+                            android:textSize="17sp"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="#000000"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Risk of disaster:"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="17sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Low"
+                            android:id="@+id/riskOfDisaster"
+                            android:textSize="17sp"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="#000000"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="40dp"
+                app:fabSize="normal"
+                android:id="@+id/addLocFab"
+                android:src="@drawable/ic_add_black_24dp"
+                app:backgroundTint="#efefef"
+                />
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/searchFab"
+                android:layout_centerInParent="true"
+                app:fabSize="normal"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/ic_search_black_24dp"
+                app:backgroundTint="#efefef"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/ic_assignment_black_24dp"
+                android:layout_marginRight="40dp"
+                android:id="@+id/statusFab"
+                app:fabSize="normal"
+                app:backgroundTint="#efefef"/>
+
+
+        </RelativeLayout>
+
+
+
+</FrameLayout>
