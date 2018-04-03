@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:descendantFocusability="beforeDescendants"
     tools:context="com.example.safely.SignUp"
     android:background="@drawable/background">
 
@@ -87,6 +89,22 @@
                 android:gravity="center"
                 android:textColorHint="#aaffffff"
                 android:hint="Phone Number"
+                android:layout_marginBottom="12dp"/>
+
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number"
+                android:background="@drawable/dark_edit_text"
+                android:padding="12dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:textColorHint="#aaffffff"
+                android:hint="Age"
                 android:layout_marginBottom="12dp"/>
             <EditText
                 android:id="@+id/pass"
